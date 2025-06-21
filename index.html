@@ -6,103 +6,96 @@
     <title>Bric Brac Artisaua</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            font-family: Arial, sans-serif;
+            background-color: #27aae1;
+            overflow-x: hidden;
         }
-        header {
-            background-color: #c3a87c;
-            padding: 0;
-            text-align: center;
-        }
-        header img {
+        .hero {
+            position: relative;
+            height: 100vh;
             width: 100%;
-            max-height: 300px;
-            object-fit: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        nav {
-            background-color: #e6d8b6;
-            padding: 10px;
-            text-align: center;
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
         }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
+        .circle.topleft {
+            width: 40vw;
+            height: 40vw;
+            top: -20vw;
+            left: -20vw;
         }
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
+        .circle.topright {
+            width: 40vw;
+            height: 40vw;
+            top: -20vw;
+            right: -20vw;
         }
-        .produits {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        .circle.bottomleft {
+            width: 40vw;
+            height: 40vw;
+            bottom: -20vw;
+            left: -20vw;
+        }
+        .circle.bottomright {
+            width: 40vw;
+            height: 40vw;
+            bottom: -20vw;
+            right: -20vw;
+        }
+        .oval {
+            width: 60vw;
+            height: 60vw;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+        }
+        .sections {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
             gap: 20px;
+            align-items: center;
         }
-        .produit {
-            background: white;
-            padding: 15px;
+        .section-btn {
+            background-color: #007ac2;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
             border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        }
-        footer {
-            background-color: #c3a87c;
+            text-decoration: none;
             text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+            width: 300px;
+        }
+        .section-btn:hover {
+            background-color: #005c91;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="banniere-bois-bba.png" alt="Bannière Bric Brac Artisaua">
-    </header>
-    <nav>
-        <a href="#apropos">À propos</a>
-        <a href="#produits">Nos créations</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    
-    <section id="apropos">
-        <h2>À propos</h2>
-        <p>Je propose des créations artisanales personnalisées grâce à la gravure laser. Porte-clés, magnets, dessous de verre, et bien d'autres objets sur mesure, selon vos envies.</p>
-    </section>
-
-    <section id="produits">
-        <h2>Nos créations</h2>
-        <div class="produits">
-            <div class="produit">
-                <h3>Porte-clé gravé</h3>
-                <p>En bois ou en métal, personnalisable avec prénom, date, motif, etc.</p>
-            </div>
-            <div class="produit">
-                <h3>Médaille pour chien</h3>
-                <p>Gravée avec nom, numéro de téléphone, design au choix.</p>
-            </div>
-            <div class="produit">
-                <h3>Magnet déco</h3>
-                <p>Petit format aimanté à personnaliser pour frigo ou tableau magnétique.</p>
-            </div>
-            <div class="produit">
-                <h3>Dessous de verre</h3>
-                <p>Design vintage ou moderne, en bois gravé.</p>
-            </div>
+    <div class="hero">
+        <div class="circle topleft"></div>
+        <div class="circle topright"></div>
+        <div class="circle bottomleft"></div>
+        <div class="circle bottomright"></div>
+        <div class="oval"></div>
+        <div class="sections">
+            <a href="#portecles" class="section-btn">Gravure Porte-Clés</a>
+            <a href="#dessousverre" class="section-btn">Gravure Dessous de Verre</a>
+            <a href="#magnets" class="section-btn">Gravure Magnets</a>
+            <a href="#medailles" class="section-btn">Médailles pour Animaux</a>
+            <a href="#cartes" class="section-btn">Cartes de visite en métal</a>
         </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Pour toute demande de devis ou de personnalisation, n'hésitez pas à me contacter :</p>
-        <p>Email : <a href="mailto:contact@bricbracartisaua.fr">contact@bricbracartisaua.fr</a></p>
-        <p>Instagram : <a href="https://instagram.com/tonprofil">@tonprofil</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Bric Brac Artisaua - Gravure laser artisanale</p>
-    </footer>
+    </div>
 </body>
 </html>
