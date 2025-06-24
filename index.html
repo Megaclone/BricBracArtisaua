@@ -61,18 +61,23 @@
       gap: 1rem;
     }
 
+    .menu-item-wrapper {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
     .menu-item {
       display: flex;
-      align-items: stretch;
+      align-items: center;
       background-color: #fff9df;
-      padding: 0;
       border: 2px solid #111;
       border-radius: 3px;
       cursor: pointer;
       transform-origin: left;
       transition: transform 0.3s ease-in-out;
-      width: fit-content;
       box-shadow: 2px 2px 0 #000;
+      margin-bottom: 0.5rem;
     }
 
     .menu-item:hover {
@@ -86,9 +91,6 @@
       align-items: center;
       justify-content: center;
       border-right: 2px solid #111;
-      border-left: none;
-      border-top: none;
-      border-bottom: none;
     }
 
     .icon-blue { background-color: #5db2e8; }
@@ -101,11 +103,7 @@
       padding: 0.75rem 1rem;
       display: flex;
       align-items: center;
-    }
-
-    .row {
-      display: flex;
-      gap: 1rem;
+      background-color: #fff9df;
     }
   </style>
 </head>
@@ -117,27 +115,46 @@
     </div>
 
     <div class="menu">
-      <div class="row">
+      <div class="menu-item-wrapper">
         <div class="menu-item">
           <div class="icon-box icon-blue"></div>
+        </div>
+        <div class="menu-item">
           <div class="menu-text">Porte-clés</div>
         </div>
         <div class="menu-item">
           <div class="icon-box icon-red"></div>
+        </div>
+        <div class="menu-item">
           <div class="menu-text">Cartes de visite<br>en métal</div>
         </div>
       </div>
-      <div class="menu-item">
-        <div class="icon-box icon-red"></div>
-        <div class="menu-text">Dessous<br>de verre</div>
+
+      <div class="menu-item-wrapper">
+        <div class="menu-item">
+          <div class="icon-box icon-red"></div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-text">Dessous<br>de verre</div>
+        </div>
       </div>
-      <div class="menu-item">
-        <div class="icon-box icon-yellow"></div>
-        <div class="menu-text">Médailles<br>pour animaux</div>
+
+      <div class="menu-item-wrapper">
+        <div class="menu-item">
+          <div class="icon-box icon-yellow"></div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-text">Médailles<br>pour animaux</div>
+        </div>
       </div>
-      <div class="menu-item">
-        <div class="icon-box icon-blue"></div>
-        <div class="menu-text">Marque-Pages</div>
+
+      <div class="menu-item-wrapper">
+        <div class="menu-item">
+          <div class="icon-box icon-blue"></div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-text">Marque-Pages</div>
+        </div>
       </div>
     </div>
   </div>
