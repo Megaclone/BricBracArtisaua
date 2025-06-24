@@ -5,16 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bric Brac Artisaua</title>
   <style>
-    @font-face {
-      font-family: 'MV Boli';
-      src: url('fonts/mvboli.ttf') format('truetype');
-    }
-
     body {
       margin: 0;
       padding: 0;
       background-color: #4aa56d;
-      font-family: 'MV Boli', sans-serif;
+      font-family: sans-serif;
     }
 
     .container {
@@ -34,7 +29,7 @@
     }
 
     .logo-part {
-      padding: 1rem 2rem;
+      padding: 1.5rem 3.5rem;
       border-radius: 50px;
       font-size: 2.5rem;
       border: 2px solid #111;
@@ -44,14 +39,12 @@
     }
 
     .logo-yellow {
-      background-color: #f7e14f;
-      color: #e34444;
+      background-color: #f7d73d;
       transform: rotate(-5deg);
     }
 
     .logo-red {
-      background-color: #e8735e;
-      color: #fff9df;
+      background-color: #e66d58;
       transform: rotate(5deg);
     }
 
@@ -59,14 +52,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: 1rem;
-    }
-
-    .menu-item-wrapper {
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-      position: relative;
+      gap: 1.5rem;
     }
 
     .menu-group {
@@ -78,9 +64,6 @@
     .icon-box {
       width: 60px;
       height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       border: 2px solid #111;
       box-shadow: 2px 2px 0 #000;
       z-index: 2;
@@ -90,64 +73,50 @@
       background-color: #fff9df;
       border: 2px solid #111;
       box-shadow: 2px 2px 0 #000;
-      padding: 0.5rem 1rem;
-      margin-left: -20px;
+      padding: 1rem 2rem;
+      margin-left: -30px;
       z-index: 1;
-      font-size: 1.3rem;
-      white-space: nowrap;
+      height: 60px;
+      display: flex;
+      align-items: center;
     }
 
-    .menu-item-wrapper:hover {
-      transform: rotate(2deg) scale(1.02);
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .icon-blue { background-color: #5db2e8; }
-    .icon-red { background-color: #e8735e; }
-    .icon-yellow { background-color: #f7e14f; }
+    .icon-blue { background-color: #29a9e1; }
+    .icon-red { background-color: #e66d58; }
+    .icon-yellow { background-color: #f7d73d; }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="logo-area">
-      <div class="logo-part logo-yellow">Bric Brac</div>
-      <div class="logo-part logo-red">Artisaua</div>
+      <div class="logo-part logo-yellow"></div>
+      <div class="logo-part logo-red"></div>
     </div>
 
     <div class="menu">
-      <div class="menu-item-wrapper">
-        <div class="menu-group">
-          <div class="icon-box icon-blue"></div>
-          <div class="menu-text-box">Porte-clés</div>
-        </div>
+      <div class="menu-group">
+        <div class="icon-box icon-blue"></div>
+        <div class="menu-text-box"></div>
       </div>
 
-      <div class="menu-item-wrapper">
-        <div class="menu-group">
-          <div class="icon-box icon-red"></div>
-          <div class="menu-text-box">Cartes de visite<br>en métal</div>
-        </div>
+      <div class="menu-group">
+        <div class="icon-box icon-red"></div>
+        <div class="menu-text-box"></div>
       </div>
 
-      <div class="menu-item-wrapper">
-        <div class="menu-group">
-          <div class="icon-box icon-red"></div>
-          <div class="menu-text-box">Dessous<br>de verre</div>
-        </div>
+      <div class="menu-group">
+        <div class="icon-box icon-yellow"></div>
+        <div class="menu-text-box"></div>
       </div>
 
-      <div class="menu-item-wrapper">
-        <div class="menu-group">
-          <div class="icon-box icon-yellow"></div>
-          <div class="menu-text-box">Médailles<br>pour animaux</div>
-        </div>
+      <div class="menu-group">
+        <div class="icon-box icon-blue"></div>
+        <div class="menu-text-box"></div>
       </div>
 
-      <div class="menu-item-wrapper">
-        <div class="menu-group">
-          <div class="icon-box icon-blue"></div>
-          <div class="menu-text-box">Marque-Pages</div>
-        </div>
+      <div class="menu-group">
+        <div class="icon-box icon-red"></div>
+        <div class="menu-text-box"></div>
       </div>
     </div>
   </div>
