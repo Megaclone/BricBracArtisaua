@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,103 +6,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bric Brac Artisaua – Maquette vide</title>
   <style>
-    /* ====== RESET COULEURS & POLICE DE BASE ====== */
-    body{
-      margin:0;
-      padding:0;
-      background:#4aa56d;                /* fond vert */
-      font-family:sans-serif;
+    body {
+      margin: 0;
+      padding: 0;
+      background: #4aa56d;
+      font-family: sans-serif;
     }
 
-    /* ====== CONTENEUR PRINCIPAL ====== */
-    .container{
-      height:100vh;
-      display:flex;
-      justify-content:center;            /* recentre l’ensemble logo + boutons */
-      align-items:center;                /* centre verticalement */
-      gap:6rem;                          /* espace entre colonne logo et colonne boutons */
-      padding:2rem;
+    .container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+      padding: 2rem;
     }
 
-    /* ====== LOGO (2 PILULES) ====== */
-    .logo-area{
-      display:flex;
-      flex-direction:column;
-      gap:1.7rem;
-      transform:rotate(-5deg);           /* inclinaison globale */
+    .logo-area {
+      display: flex;
+      flex-direction: column;
+      gap: 1.7rem;
+      transform: rotate(-5deg);
     }
-    .logo-pill{
-      width:260px;                       /* longueur pilule (ajuste si besoin) */
-      height:110px;                      /* hauteur pilule */
-      border-radius:55px;                /* pilule bien arrondie */
-      border:2px solid #111;
-      box-shadow:2px 2px 0 #000;
-    }
-    .pill-yellow{background:#f7d73d; transform:rotate(-5deg);} /* haut */
-    .pill-red{background:#e66d58; transform:rotate(5deg);}    /* bas */
 
-    /* ====== COLONNE DES BOUTONS ====== */
-    .menu{
-      display:flex;
-      flex-direction:column;
-      gap:1.5rem;
+    .logo-pill {
+      width: 260px;
+      height: 110px;
+      border-radius: 55px;
+      border: 2px solid #111;
+      box-shadow: 2px 2px 0 #000;
     }
-    .menu-group{
-      display:flex;
-      align-items:center;               /* aligne icône/textes au centre vertical */
-      position:relative;
-    }
-    /* Icône carré à gauche */
-    .icon-box{
-      width:80px;                        /* même taille pour chaque carré */
-      height:80px;
-      border:2px solid #111;
-      box-shadow:2px 2px 0 #000;
-      flex-shrink:0;
-    }
-      .blue {background:#29a9e1;}        /* variations de couleur */
-      .red  {background:#e66d58;}
-      .yellow{background:#f7d73d;}
 
-    /* Zone texte beige qui se "glisse" derrière l’icône */
-    .menu-text{
-      height:80px;
-      min-width:280px;                   /* largeur de base, ajuste en ajoutant du texte */
-      background:#fff9df;
-      border:2px solid #111;
-      box-shadow:2px 2px 0 #000;
-      margin-left:-40px;                 /* chevauche la moitié de l’icône */
+    .pill-yellow {
+      background: #f7d73d;
+      transform: rotate(-5deg);
+    }
+
+    .pill-red {
+      background: #e66d58;
+      transform: rotate(5deg);
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    .menu-column {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .menu-group {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .menu-group.cartes {
+      margin-top: 1.5rem;
+    }
+
+    .icon-box {
+      width: 80px;
+      height: 80px;
+      border: 2px solid #111;
+      box-shadow: 2px 2px 0 #000;
+      flex-shrink: 0;
+    }
+
+    .blue {
+      background: #29a9e1;
+    }
+
+    .red {
+      background: #e66d58;
+    }
+
+    .yellow {
+      background: #f7d73d;
+    }
+
+    .menu-text {
+      height: 80px;
+      min-width: 280px;
+      background: #fff9df;
+      border: 2px solid #111;
+      box-shadow: 2px 2px 0 #000;
+      margin-left: -40px;
     }
   </style>
 </head>
 <body>
   <div class="container">
 
-    <!-- ===== LOGO ===== -->
+    <!-- LOGO -->
     <div class="logo-area">
       <div class="logo-pill pill-yellow"></div>
       <div class="logo-pill pill-red"></div>
     </div>
 
-    <!-- ===== MENU BOUTONS (VIDES) ===== -->
+    <!-- MENU BOUTONS -->
     <div class="menu">
-      <div class="menu-group">
-        <div class="icon-box blue"></div>
-        <div class="menu-text"></div>
+      <!-- Colonne principale (4 premiers boutons) -->
+      <div class="menu-column">
+        <div class="menu-group">
+          <div class="icon-box blue"></div>
+          <div class="menu-text"></div>
+        </div>
+        <div class="menu-group">
+          <div class="icon-box red"></div>
+          <div class="menu-text"></div>
+        </div>
+        <div class="menu-group">
+          <div class="icon-box yellow"></div>
+          <div class="menu-text"></div>
+        </div>
+        <div class="menu-group">
+          <div class="icon-box blue"></div>
+          <div class="menu-text"></div>
+        </div>
       </div>
-      <div class="menu-group">
-        <div class="icon-box red"></div>
-        <div class="menu-text"></div>
-      </div>
-      <div class="menu-group">
-        <div class="icon-box yellow"></div>
-        <div class="menu-text"></div>
-      </div>
-      <div class="menu-group">
-        <div class="icon-box blue"></div>
-        <div class="menu-text"></div>
-      </div>
-      <div class="menu-group">
+
+      <!-- Dernier bouton : cartes de visite -->
+      <div class="menu-group cartes">
         <div class="icon-box red"></div>
         <div class="menu-text"></div>
       </div>
