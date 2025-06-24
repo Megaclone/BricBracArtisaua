@@ -37,7 +37,6 @@
       padding: 1rem 2rem;
       border-radius: 50px;
       font-size: 2.5rem;
-      color: #e34444;
       border: 2px solid #111;
       width: fit-content;
       text-align: center;
@@ -46,6 +45,7 @@
 
     .logo-yellow {
       background-color: #f7e14f;
+      color: #e34444;
       transform: rotate(-5deg);
     }
 
@@ -65,8 +65,13 @@
     .menu-item-wrapper {
       display: flex;
       align-items: center;
-      gap: 0;
       position: relative;
+    }
+
+    .menu-group {
+      display: flex;
+      align-items: center;
+      margin-right: 2rem;
     }
 
     .icon-box {
@@ -78,7 +83,6 @@
       border: 2px solid #111;
       box-shadow: 2px 2px 0 #000;
       z-index: 2;
-      position: relative;
     }
 
     .menu-text-box {
@@ -89,6 +93,7 @@
       margin-left: -30px;
       z-index: 1;
       font-size: 1.6rem;
+      white-space: nowrap;
     }
 
     .menu-item-wrapper:hover {
@@ -110,10 +115,14 @@
 
     <div class="menu">
       <div class="menu-item-wrapper">
-        <div class="icon-box icon-blue"></div>
-        <div class="menu-text-box">Porte-clés</div>
-        <div class="icon-box icon-red" style="margin-left: 1rem;"></div>
-        <div class="menu-text-box">Cartes de visite<br>en métal</div>
+        <div class="menu-group">
+          <div class="icon-box icon-blue"></div>
+          <div class="menu-text-box">Porte-clés</div>
+        </div>
+        <div class="menu-group">
+          <div class="icon-box icon-red"></div>
+          <div class="menu-text-box">Cartes de visite<br>en métal</div>
+        </div>
       </div>
 
       <div class="menu-item-wrapper">
