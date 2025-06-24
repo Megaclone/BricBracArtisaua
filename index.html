@@ -51,7 +51,7 @@
 
     .logo-red {
       background-color: #e8735e;
-      color: #f7e14f;
+      color: #fff9df;
       transform: rotate(5deg);
     }
 
@@ -64,14 +64,15 @@
 
     .menu-item-wrapper {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+      gap: 1rem;
       position: relative;
     }
 
     .menu-group {
       display: flex;
       align-items: center;
-      margin-right: 2rem;
+      position: relative;
     }
 
     .icon-box {
@@ -89,10 +90,10 @@
       background-color: #fff9df;
       border: 2px solid #111;
       box-shadow: 2px 2px 0 #000;
-      padding: 0.75rem 1rem;
-      margin-left: -30px;
+      padding: 0.5rem 1rem;
+      margin-left: -20px;
       z-index: 1;
-      font-size: 1.6rem;
+      font-size: 1.3rem;
       white-space: nowrap;
     }
 
@@ -119,6 +120,9 @@
           <div class="icon-box icon-blue"></div>
           <div class="menu-text-box">Porte-clés</div>
         </div>
+      </div>
+
+      <div class="menu-item-wrapper">
         <div class="menu-group">
           <div class="icon-box icon-red"></div>
           <div class="menu-text-box">Cartes de visite<br>en métal</div>
@@ -126,18 +130,24 @@
       </div>
 
       <div class="menu-item-wrapper">
-        <div class="icon-box icon-red"></div>
-        <div class="menu-text-box">Dessous<br>de verre</div>
+        <div class="menu-group">
+          <div class="icon-box icon-red"></div>
+          <div class="menu-text-box">Dessous<br>de verre</div>
+        </div>
       </div>
 
       <div class="menu-item-wrapper">
-        <div class="icon-box icon-yellow"></div>
-        <div class="menu-text-box">Médailles<br>pour animaux</div>
+        <div class="menu-group">
+          <div class="icon-box icon-yellow"></div>
+          <div class="menu-text-box">Médailles<br>pour animaux</div>
+        </div>
       </div>
 
       <div class="menu-item-wrapper">
-        <div class="icon-box icon-blue"></div>
-        <div class="menu-text-box">Marque-Pages</div>
+        <div class="menu-group">
+          <div class="icon-box icon-blue"></div>
+          <div class="menu-text-box">Marque-Pages</div>
+        </div>
       </div>
     </div>
   </div>
