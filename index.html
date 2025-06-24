@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bric Brac Artisaua</title>
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
   <style>
+    @font-face {
+      font-family: 'MV Boli';
+      src: url('fonts/mvboli.ttf') format('truetype');
+    }
+
     body {
       margin: 0;
       padding: 0;
       background-color: #4aa56d;
-      font-family: 'Comic Neue', cursive;
+      font-family: 'MV Boli', sans-serif;
     }
 
     .container {
@@ -24,17 +28,19 @@
     .logo-area {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
-      align-items: center;
+      gap: 2rem;
+      align-items: flex-start;
+      transform: rotate(-2deg);
     }
 
     .logo-part {
       padding: 1rem 2rem;
-      border-radius: 40px;
-      font-size: 2rem;
+      border-radius: 50px;
+      font-size: 2.5rem;
       color: #3b3b3b;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-      transform: rotate(-5deg);
+      border: 2px solid #222;
+      width: 200px;
+      text-align: center;
     }
 
     .logo-yellow {
@@ -46,36 +52,36 @@
     }
 
     .menu {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 1.2rem;
     }
 
     .menu-item {
       display: flex;
       align-items: center;
-      background-color: #fef6dd;
-      padding: 1rem 1.5rem;
-      border: 2px solid #333;
-      border-radius: 4px;
+      background-color: #fff9df;
+      padding: 0.6rem 1.2rem;
+      border: 2px solid #222;
+      border-radius: 3px;
       cursor: pointer;
-      width: fit-content;
       transform-origin: left;
       transition: transform 0.3s ease-in-out;
+      min-width: 260px;
     }
 
     .menu-item:hover {
-      transform: rotate(3deg) scale(1.02);
+      transform: rotate(2deg) scale(1.03);
     }
 
     .icon-box {
-      width: 50px;
-      height: 50px;
+      width: 45px;
+      height: 45px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-right: 1rem;
-      border: 2px solid #333;
+      margin-right: 0.8rem;
+      border: 1.5px solid #222;
     }
 
     .icon-blue { background-color: #5db2e8; }
@@ -83,8 +89,8 @@
     .icon-yellow { background-color: #f1d74d; }
 
     .menu-text {
-      font-size: 1.5rem;
-      color: #222;
+      font-size: 1.4rem;
+      color: #111;
     }
   </style>
 </head>
@@ -101,6 +107,10 @@
       </div>
       <div class="menu-item">
         <div class="icon-box icon-red"></div>
+        <div class="menu-text">Cartes de visite en métal</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box icon-red"></div>
         <div class="menu-text">Dessous de verre</div>
       </div>
       <div class="menu-item">
@@ -110,10 +120,6 @@
       <div class="menu-item">
         <div class="icon-box icon-blue"></div>
         <div class="menu-text">Marque-pages</div>
-      </div>
-      <div class="menu-item">
-        <div class="icon-box icon-red"></div>
-        <div class="menu-text">Cartes de visite en métal</div>
       </div>
     </div>
   </div>
