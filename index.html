@@ -28,69 +28,80 @@
     .logo-area {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
-      align-items: flex-start;
-      transform: rotate(-2deg);
+      align-items: center;
+      transform: rotate(-5deg);
+      gap: 1.5rem;
     }
 
     .logo-part {
       padding: 1rem 2rem;
       border-radius: 50px;
       font-size: 2.5rem;
-      color: #3b3b3b;
-      border: 2px solid #222;
-      width: 200px;
+      color: #e34444;
+      border: 2px solid #111;
+      width: fit-content;
       text-align: center;
+      box-shadow: 2px 2px 0 #000;
     }
 
     .logo-yellow {
       background-color: #f7e14f;
+      transform: rotate(-5deg);
     }
 
     .logo-red {
       background-color: #e8735e;
+      transform: rotate(5deg);
     }
 
     .menu {
-      display: grid;
-      grid-template-columns: repeat(2, auto);
-      gap: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
     }
 
     .menu-item {
       display: flex;
       align-items: center;
       background-color: #fff9df;
-      padding: 0.6rem 1.2rem;
-      border: 2px solid #222;
+      padding: 0.5rem 1rem;
+      border: 2px solid #111;
       border-radius: 3px;
       cursor: pointer;
       transform-origin: left;
       transition: transform 0.3s ease-in-out;
-      min-width: 260px;
+      min-width: 280px;
+      box-shadow: 2px 2px 0 #000;
     }
 
     .menu-item:hover {
-      transform: rotate(2deg) scale(1.03);
+      transform: rotate(2deg) scale(1.02);
     }
 
     .icon-box {
-      width: 45px;
-      height: 45px;
+      width: 50px;
+      height: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
       margin-right: 0.8rem;
-      border: 1.5px solid #222;
+      border: 2px solid #111;
+      box-shadow: 2px 2px 0 #000;
     }
 
     .icon-blue { background-color: #5db2e8; }
-    .icon-red { background-color: #d36b5b; }
-    .icon-yellow { background-color: #f1d74d; }
+    .icon-red { background-color: #e8735e; }
+    .icon-yellow { background-color: #f7e14f; }
 
     .menu-text {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       color: #111;
+    }
+
+    .row {
+      display: flex;
+      gap: 1rem;
     }
   </style>
 </head>
@@ -100,26 +111,29 @@
       <div class="logo-part logo-yellow">Bric Brac</div>
       <div class="logo-part logo-red">Artisaua</div>
     </div>
+
     <div class="menu">
-      <div class="menu-item">
-        <div class="icon-box icon-blue"></div>
-        <div class="menu-text">Porte-clés</div>
+      <div class="row">
+        <div class="menu-item">
+          <div class="icon-box icon-blue"></div>
+          <div class="menu-text">Porte-clés</div>
+        </div>
+        <div class="menu-item">
+          <div class="icon-box icon-red"></div>
+          <div class="menu-text">Cartes de visite<br>en métal</div>
+        </div>
       </div>
       <div class="menu-item">
         <div class="icon-box icon-red"></div>
-        <div class="menu-text">Cartes de visite en métal</div>
-      </div>
-      <div class="menu-item">
-        <div class="icon-box icon-red"></div>
-        <div class="menu-text">Dessous de verre</div>
+        <div class="menu-text">Dessous<br>de verre</div>
       </div>
       <div class="menu-item">
         <div class="icon-box icon-yellow"></div>
-        <div class="menu-text">Médailles pour animaux</div>
+        <div class="menu-text">Médailles<br>pour animaux</div>
       </div>
       <div class="menu-item">
         <div class="icon-box icon-blue"></div>
-        <div class="menu-text">Marque-pages</div>
+        <div class="menu-text">Marque-Pages</div>
       </div>
     </div>
   </div>
