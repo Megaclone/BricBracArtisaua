@@ -223,20 +223,32 @@
   color: #f7d73d;
   -webkit-text-stroke: 0.1px #000;
 }
-
+.logo-image {
+  position: absolute;
+  top: 3rem;               /* ajuste verticalement */
+  left: 3rem;              /* ajuste horizontalement */
+  width: 300px;            /* adapte selon tes besoins */
+}
+.logo-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 </style>
 </head>
 <body>
+<div class="logo-image">
+  <img src="images/logo-bba.png" alt="Logo Bric Brac Artisaua">
+</div>
+
   <div class="container">
 
     <!-- LOGO -->
-  <div class="logo-area">
-  <div class="logo-pill pill-yellow">
-    <div class="logo-text bricbrac">Bric Brac</div>
-  </div>
-  <div class="logo-pill pill-red">
-    <div class="logo-text artisaua">Artisaua</div>
+  <div class="logo-image">
+  <img src="images/logo-bba.png" alt="Logo Bric Brac Artisaua">
+</div>
+
   </div>
 </div>
 
