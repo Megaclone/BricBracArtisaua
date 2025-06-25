@@ -1,16 +1,113 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bric Brac Artisaua – Maquette vide</title>
+  <title>Bric Brac Artisaua – Maquette vide</title>
   <style>
+
+.logo-text {
+  font-family: 'MV Boli', sans-serif;
+  
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+
+
+.menu-text.logo-text {
+  font-family: 'MV Boli', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+/* Texte rouge avec contour noir */
+.bricbrac {
+  color: #d62828; /* rouge vif */
+  -webkit-text-stroke: 1.2px #000;
+}
+
+/* Texte jaune avec contour noir */
+.artisaua {
+  color: #f7d73d; /* jaune vif */
+  -webkit-text-stroke: 1.2px #000;
+}
+
+
+.menu-text.portecles     { font-size: 2rem; }
+.menu-text.dessous {
+  font-size: 2rem;
+  line-height: 1.1; /* Réduit l'espace entre les lignes */
+}
+
+.menu-text.medaille      { font-size: 1.5rem; 
+                           line-height: 1.1;
+                           padding-left: 2rem;  /* ← décale vers la droite */
+                           text-align: left;    /* ← aligne le texte sur la gauche dans la zone */
+}
+.menu-text.marquepage    { font-size: 2rem; 
+                           padding-left: 2rem;  /* ← décale vers la droite */
+                           text-align: left;    /* ← aligne le texte sur la gauche dans la zone */
+}
+.menu-text.cartes        { font-size: 1.7rem; 
+                           line-height: 1.1; /* Réduit l'espace entre les lignes */
+                           padding-left: 3rem;  /* ← décale vers la droite */
+                           text-align: left;    /* ← aligne le texte sur la gauche dans la zone */
+
+}
+
+
+@font-face {
+  font-family: 'MV Boli';
+  src: url('fonts/mvboli.ttf') format('truetype');
+}
+
+.menu-text {
+  font-family: 'MV Boli', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 280px;                 /* largeur fixe */
+  height: 100px;                /* hauteur fixe */
+  display: flex;
+  align-items: center;          /* centrage vertical */
+  justify-content: center;      /* centrage horizontal */
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;             /* empêche le débordement */
+  white-space: nowrap;          /* empêche le retour à la ligne */
+}
+
+
+      .menu-group {
+  transition: transform 0.25s ease;
+  transform-origin: center center;
+}
+
+.menu-group:hover {
+  transform: rotate(-2deg) scale(1.03);
+}
+
     body {
       margin: 0;
       padding: 0;
       background: #4aa56d;
       font-family: sans-serif;
     }
+
     .container {
       height: 100vh;
       display: flex;
@@ -19,44 +116,67 @@
       gap: 5rem;
       padding: 2rem;
     }
-    .logo-image {
-      position: absolute;
-      top: 3rem;
-      left: 3rem;
-      width: 300px;
+
+    .logo-area {
+      display: flex;
+      flex-direction: column;
+      gap: 1.7rem;
+      transform: rotate(-5deg);
     }
-    .logo-image img {
-      width: 100%;
-      height: auto;
-      display: block;
-      box-shadow: 2px 2px 0 #000;
+
+    .logo-pill {
+      width: 260px;
+      height: 110px;
+      border-radius: 55px;
       border: 2px solid #111;
+      box-shadow: 2px 2px 0 #000;
+      display: flex;                 /* ← nécessaire pour centrer */
+      justify-content: center;
+      align-items: center;
+
+  
+</div>
+    
+
+
+
+
+}
+
+    .pill-yellow {
+      background: #f7d73d;
+      transform: rotate(-5deg);
     }
+
+    .pill-red {
+      background: #e66d58;
+      transform: rotate(5deg);
+    }
+
     .menu {
       display: flex;
       flex-direction: row;
       align-items: flex-start;
       gap: 2rem;
     }
+
     .menu-column {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
     }
+
     .menu-group {
       display: flex;
       align-items: center;
       position: relative;
-      transition: transform 0.25s ease;
-      transform-origin: center center;
     }
-    .menu-group:hover {
-      transform: rotate(-2deg) scale(1.03);
-    }
+
     .menu-group.cartes {
       margin-top: 0rem;
       margin-left: 2rem;
     }
+
     .icon-box {
       width: 60px;
       height: 60px;
@@ -65,62 +185,71 @@
       flex-shrink: 0;
       z-index: 2;
     }
-    .blue { background: #29a9e1; }
-    .red { background: #e66d58; }
-    .yellow { background: #f7d73d; }
+
+    .blue {
+      background: #29a9e1;
+    }
+
+    .red {
+      background: #e66d58;
+    }
+
+    .yellow {
+      background: #f7d73d;
+    }
+
     .menu-text {
-      font-family: 'MV Boli', sans-serif;
-      font-size: 1.2rem;
-      font-weight: bold;
-      width: 280px;
-      height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      box-sizing: border-box;
-      overflow: hidden;
-      white-space: nowrap;
+      height: 80px;
+      min-width: 280px;
       background: #fff9df;
       border: 2px solid #111;
       box-shadow: 2px 2px 0 #000;
       margin-left: -40px;
     }
-    .menu-text.portecles { font-size: 2rem; }
-    .menu-text.dessous {
-      font-size: 2rem;
-      line-height: 1.1;
-    }
-    .menu-text.medaille {
-      font-size: 1.5rem;
-      line-height: 1.1;
-      padding-left: 2rem;
-      text-align: left;
-    }
-    .menu-text.marquepage {
-      font-size: 2rem;
-      padding-left: 2rem;
-      text-align: left;
-    }
-    .menu-text.cartes {
-      font-size: 1.7rem;
-      line-height: 1.1;
-      padding-left: 3rem;
-      text-align: left;
-    }
-    @font-face {
-      font-family: 'MV Boli';
-      src: url('fonts/mvboli.ttf') format('truetype');
-    }
-  </style>
+  
+.bricbrac {
+  font-size: 3rem;
+  color: #d62828;
+  -webkit-text-stroke: 0.1px #000;
+}
+
+.artisaua {
+  font-size: 3.5rem;
+  color: #f7d73d;
+  -webkit-text-stroke: 0.1px #000;
+}
+.logo-image {
+  position: absolute;
+  top: 3rem;               /* ajuste verticalement */
+  left: 3rem;              /* ajuste horizontalement */
+  width: 300px;            /* adapte selon tes besoins */
+}
+.logo-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.logo-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background: none !important;
+}
+
+</style>
 </head>
 <body>
-
-  <div class="logo-image">
-    <img src="images/logo-bba.png" alt="Logo Bric Brac Artisaua">
-  </div>
+<div class="logo-image">
+  <img src="images/logo-bba.png" alt="Logo Bric Brac Artisaua">
+</div>
 
   <div class="container">
+
+  </div>
+</div>
 
     <!-- MENU BOUTONS -->
     <div class="menu">
@@ -143,6 +272,7 @@
           <div class="menu-text marquepage">Marque-pages</div>
         </div>
       </div>
+
       <!-- Dernier bouton : cartes de visite -->
       <div class="menu-group cartes">
         <div class="icon-box red"></div>
