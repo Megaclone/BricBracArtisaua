@@ -80,16 +80,28 @@
   font-family: 'MV Boli', sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
-  width: 280px;                 /* largeur fixe */
-  height: 100px;                /* hauteur fixe */
+  width: 280px;
+  height: 100px;
   display: flex;
-  align-items: center;          /* centrage vertical */
-  justify-content: center;      /* centrage horizontal */
+  align-items: center;
+  justify-content: center;
   text-align: center;
   box-sizing: border-box;
-  overflow: hidden;             /* empêche le débordement */
-  white-space: nowrap;          /* empêche le retour à la ligne */
+  overflow: hidden;
+  white-space: nowrap;
+  color: #222;            /* ← ajoute la couleur voulue */
+  text-decoration: none;  /* ← enlève le soulignement */
 }
+
+/* Et si tu utilises <a> dans .menu-text */
+.menu-text a,
+.menu-text:visited,
+.menu-text:active,
+.menu-text:hover {
+  color: #222;            /* ← adapte si tu veux un autre bleu, rouge... */
+  text-decoration: none;
+}
+
 
 
       .menu-group {
