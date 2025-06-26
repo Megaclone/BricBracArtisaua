@@ -3,33 +3,174 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Porte-clés – Bric Brac Artisaua</title>
+  <title>Porte-clés gravés – BBA</title>
   <style>
     body {
       margin: 0;
       padding: 0;
+      background: #4aa56d;
       font-family: 'MV Boli', sans-serif;
-      background: #fffbe8;
+    }
+    .page-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       min-height: 100vh;
+      padding: 2rem 0 2rem 0;
     }
-    h1 {
-      margin-top: 3rem;
-      color: #e66d58;
-      font-size: 2.3rem;
+    /* Bouton retour */
+    .retour-btn {
+      position: absolute;
+      left: 2.5rem;
+      top: 2.5rem;
+      background: #fff9df;
+      color: #222;
+      border: 2px solid #222;
+      border-radius: 14px;
+      font-size: 1.6rem;
+      padding: 0.7rem 2.5rem;
+      font-family: inherit;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 2px 2px 0 #000;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
     }
-    p {
+    .retour-btn::before {
+      content: '←';
+      font-size: 1.8rem;
+      margin-right: 0.5rem;
+    }
+    /* Grand titre */
+    .titre-capsule {
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+      background: #fff9df;
+      color: #b94324;
+      border: 2px solid #222;
+      border-radius: 18px;
+      box-shadow: 2px 2px 0 #000;
+      font-size: 3rem;
+      font-weight: bold;
+      padding: 1rem 3.5rem;
+      display: inline-block;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    /* Sous-titre */
+    .sous-titre {
+      color: #222;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-weight: normal;
+    }
+    /* Grille de cartes produits */
+    .cartes-container {
+      display: grid;
+      grid-template-columns: repeat(3, 270px);
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    /* Une carte produit */
+    .carte-produit {
+      background: #fff9df;
+      border: 2px solid #222;
+      border-radius: 15px;
+      box-shadow: 2px 2px 0 #000;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1.3rem 1rem 1.1rem 1rem;
+      transition: transform 0.18s;
+      position: relative;
+    }
+    .carte-produit:hover {
+      transform: scale(1.045) rotate(-1.5deg);
+    }
+    .icone-produit {
+      width: 55px;
+      height: 55px;
+      margin-bottom: 1rem;
+      object-fit: contain;
+    }
+    .nom-produit {
+      font-size: 1.35rem;
+      font-weight: bold;
+      color: #222;
+      text-align: center;
+      margin-bottom: 0.7rem;
+      font-family: inherit;
+    }
+    .desc-produit {
       color: #444;
-      font-size: 1.3rem;
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-family: inherit;
+      min-height: 34px;
+      line-height: 1.25;
     }
-    /* Ajoute ici ton style plus tard si besoin */
+    .btn-voirplus {
+      margin-top: auto;
+      background: #fff;
+      color: #222;
+      border: 2px solid #222;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-family: inherit;
+      font-weight: bold;
+      padding: 0.5rem 1.7rem;
+      cursor: pointer;
+      box-shadow: 2px 2px 0 #000;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-voirplus:hover {
+      background: #ececec;
+    }
+    /* Responsive */
+    @media (max-width: 1050px) {
+      .cartes-container { grid-template-columns: repeat(2, 270px);}
+    }
+    @media (max-width: 700px) {
+      .cartes-container { grid-template-columns: 1fr;}
+      .titre-capsule { font-size: 2.2rem; padding: 1rem 1.2rem;}
+      .retour-btn { left: 1rem; top: 1rem; }
+    }
   </style>
 </head>
 <body>
-  <h1>Porte-clés personnalisés</h1>
-  <p>Cette page est en construction.</p>
+  <div class="page-container">
+    <a href="index.html" class="retour-btn">Retour</a>
+    <div class="titre-capsule">Porte-clés gravés</div>
+    <div class="sous-titre">Personnalisez votre trousseau&nbsp;!</div>
+    <div class="cartes-container">
+      <div class="carte-produit">
+        <!-- Remplace src par ton icône porte-clé personnalisée -->
+        <img class="icone-produit" src="images/porte-cles.png" alt="">
+        <div class="nom-produit">Porte-clé personnalisé</div>
+        <div class="desc-produit">Faites graver le texte de votre choix.</div>
+        <a href="#" class="btn-voirplus">Voir plus</a>
+      </div>
+      <div class="carte-produit">
+        <img class="icone-produit" src="images/porte-cles2.png" alt="">
+        <div class="nom-produit">Porte-clé prénom gravé</div>
+        <div class="desc-produit">Idéal pour un cadeau unique.</div>
+        <a href="#" class="btn-voirplus">Voir plus</a>
+      </div>
+      <div class="carte-produit">
+        <img class="icone-produit" src="images/porte-cles3.png" alt="">
+        <div class="nom-produit">Porte-clé bois</div>
+        <div class="desc-produit">Naturel, robuste, écologique.</div>
+        <a href="#" class="btn-voirplus">Voir plus</a>
+      </div>
+      <!-- Ajoute/duplique des cartes selon tes besoins -->
+    </div>
+  </div>
 </body>
 </html>
