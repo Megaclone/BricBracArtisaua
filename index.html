@@ -113,7 +113,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 7rem;
+      gap: 5rem;
       padding: 2rem;
     }
 
@@ -219,10 +219,13 @@
   -webkit-text-stroke: 0.1px #000;
 }
 .logo-image {
-  position: absolute;
-  top: 3rem;               /* ajuste verticalement */
-  left: 3rem;              /* ajuste horizontalement */
-  width: 300px;            /* adapte selon tes besoins */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Pour donner l'effet incliné comme les capsules : */
+  transform: rotate(-5deg);
+  /* Ajuste si tu veux que le logo soit + près ou + loin du menu : */
+  margin-right: 3rem;
 }
 .logo-image img {
   width: 100%;
@@ -242,11 +245,11 @@
 </style>
 </head>
 <body>
+<div class="container">
 <div class="logo-image">
   <img src="images/logo-bba.png" alt="Logo Bric Brac Artisaua">
 </div>
 
-  <div class="container">
 
     <!-- MENU BOUTONS -->
     <div class="menu">
