@@ -43,22 +43,6 @@
       font-size: 1.8rem;
       margin-right: 0.5rem;
     }
-    /* Grand titre */
-    .titre-capsule {
-      margin-top: 2.5rem;
-      margin-bottom: 1.5rem;
-      background: #fff9df;
-      color: #b94324;
-      border: 2px solid #222;
-      border-radius: 18px;
-      box-shadow: 2px 2px 0 #000;
-      font-size: 3rem;
-      font-weight: bold;
-      padding: 1rem 3.5rem;
-      display: inline-block;
-      text-align: center;
-      letter-spacing: 2px;
-    }
     /* Sous-titre */
     .sous-titre {
       color: #222;
@@ -139,7 +123,6 @@
     }
     @media (max-width: 700px) {
       .cartes-container { grid-template-columns: 1fr;}
-      .titre-capsule { font-size: 2.2rem; padding: 1rem 1.2rem;}
       .retour-btn { left: 1rem; top: 1rem; }
     }
   </style>
@@ -147,14 +130,11 @@
 <body>
   <div class="page-container">
     <a href="index.html" class="retour-btn">Retour</a>
-   
-    <img src="images/porte-cles-graves.png" alt="Porte-clés gravés" style="height:90px; width:auto; display:block; margin:2.5rem auto 1.5rem auto;">
-</div>
-
+    <img src="images/porte-cles-graves.png" alt="Porte-clés gravés"
+         style="height:90px; width:auto; display:block; margin:2.5rem auto 1.5rem auto;">
     <div class="sous-titre">Personnalisez votre trousseau&nbsp;!</div>
     <div class="cartes-container">
       <div class="carte-produit">
-        <!-- Remplace src par ton icône porte-clé personnalisée -->
         <img class="icone-produit" src="images/porte-cles.png" alt="">
         <div class="nom-produit">Porte-clé personnalisé</div>
         <div class="desc-produit">Faites graver le texte de votre choix.</div>
@@ -175,6 +155,5 @@
       <!-- Ajoute/duplique des cartes selon tes besoins -->
     </div>
   </div>
-
 </body>
 </html>
