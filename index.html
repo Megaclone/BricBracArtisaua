@@ -106,15 +106,18 @@
       padding: 0;
       background: #4aa56d;
       font-family: sans-serif;
+      box-sizing: border-box; /* ← évite certains bugs de centrage */
+
     }
 
     .container {
-      height: 100vh;
+      min-height: 100vh;
+      width: 100vw;        /* ← prend toute la largeur de la fenêtre */
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 0rem;
-      padding: 2rem;
+     
     }
 
     .logo-area {
