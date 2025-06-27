@@ -102,13 +102,17 @@
 }
 
     body {
-      margin: 0;
-      padding: 0;
-      background: #4aa56d;
-      font-family: sans-serif;
-      box-sizing: border-box; /* ← évite certains bugs de centrage */
+  margin: 0;
+  padding: 0;
+  background: #4aa56d;
+  /* Ajoute la texture bois en fond : */
+  background-image: url('images/fond-bois-vert.png');
+  background-size: repeat;     /* Pour un motif bois discret et sans étirement */
+  background-attachment: fixed;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
 
-    }
 
     .container {
       min-height: 100vh;
