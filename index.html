@@ -80,28 +80,16 @@
   font-family: 'MV Boli', sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
-  width: 280px;
-  height: 100px;
+  width: 280px;                 /* largeur fixe */
+  height: 100px;                /* hauteur fixe */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center;          /* centrage vertical */
+  justify-content: center;      /* centrage horizontal */
   text-align: center;
   box-sizing: border-box;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #222;            /* ← ajoute la couleur voulue */
-  text-decoration: none;  /* ← enlève le soulignement */
+  overflow: hidden;             /* empêche le débordement */
+  white-space: nowrap;          /* empêche le retour à la ligne */
 }
-
-/* Et si tu utilises <a> dans .menu-text */
-.menu-text a,
-.menu-text:visited,
-.menu-text:active,
-.menu-text:hover {
-  color: #222;            /* ← adapte si tu veux un autre bleu, rouge... */
-  text-decoration: none;
-}
-
 
 
       .menu-group {
@@ -280,38 +268,29 @@
     <div class="menu">
       <!-- Colonne principale (4 premiers boutons) -->
       <div class="menu-column">
-      <div class="menu-group">
-      <a href="portecles.html" class="icon-box blue">
-    <img src="images/porte-cles.png" alt="Porte-clés">
-    </a>
-    <a href="portecles.html" class="menu-text portecles">Porte-clés</a>
-        </div>
-
         <div class="menu-group">
-          <div class="icon-box red">
-          <img src="images/icone-dessousverre.png" alt="Dessous de verre">
-</div>
+          <div class="icon-box blue">
+          <img src="images/porte-cles.png" alt="Porte-clés">
+          </div>
+          <div class="menu-text portecles">Porte-clés</div>
+        </div>
+        <div class="menu-group">
+          <div class="icon-box red"></div>
           <div class="menu-text dessous">Dessous<br>de verre</div>
         </div>
         <div class="menu-group">
-          <div class="icon-box yellow">
-         <img src="images/icone-medaille.png" alt="Médaille gravée">
-         </div>
+          <div class="icon-box yellow"></div>
           <div class="menu-text medaille">Médailles Gravées<br>pour chien et chat</div>
         </div>
         <div class="menu-group">
-          <div class="icon-box blue">
-          <img src="images/marquepage.png" alt="Marque-pages">
-          </div>
+          <div class="icon-box blue"></div>
           <div class="menu-text marquepage">Marque-pages</div>
         </div>
       </div>
 
       <!-- Dernier bouton : cartes de visite -->
       <div class="menu-group cartes">
-        <div class="icon-box red">
-        <img src="images/cartes.png" alt="Cartes de Visite">
-        </div>
+        <div class="icon-box red"></div>
         <div class="menu-text cartes">Cartes de Visite<br>Personnalisées</div>
       </div>
     </div>
